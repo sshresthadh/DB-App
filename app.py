@@ -65,7 +65,7 @@ def login():
     username = request.form['username']
     password = request.form['password']
 
-    if username == 'admin' and password == 'admin':
+    if username == 'admin' and password == '@Deerhold2024':
         return redirect(url_for('dashboard'))
     else:
         return redirect(url_for('index', error='Invalid credentials'))
